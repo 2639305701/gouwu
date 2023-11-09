@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*头部*/
+.nav {
+  height: 30px;
+  width: 100%;
+  background: #f1f1f1;
+}
+.nav > p {
+  line-height: 30px;
+  height: 30px;
+  font-size: 11px;
+  color: #666666;
+  float: left;
+  padding-left: 140px;
+}
+.nav ul {
+  float: right;
+  width: 271px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 140px;
+}
+.nav ul li {
+  float: left;
+  text-align: center;
+}
+.nav ul li:nth-child(3) {
+  position: relative;
+}
+.nav ul li:nth-child(3) .contact {
+  position: absolute;
+  width: 299px;
+  height: 170px;
+  right: -30px;
+  background: #FFFFFF;
+  display: none;
+}
+.nav ul li:nth-child(3) .contact div {
+  float: left;
+  padding: 15px;
+}
+.nav ul li:nth-child(3) .contact div img {
+  display: block;
+}
+.nav ul li:nth-child(3):hover {
+  background: #FFFFFF;
+}
+.nav ul li:nth-child(3):hover .contact {
+  display: block;
+}
+.nav ul li:nth-child(4) {
+  position: relative;
+}
+.nav ul li:nth-child(4) a {
+  border: none;
+}
+.nav ul li:nth-child(4) > p {
+  display: none;
+  background: #FFFFFF;
+  font-size: 9px;
+  padding: 15px 10px;
+  position: absolute;
+  left: 0;
+  width: 90px;
+}
+.nav ul li:nth-child(4):hover {
+  background: #FFFFFF;
+}
+.nav ul li:nth-child(4):hover > p {
+  display: block;
+}
+.nav ul li a {
+  font-size: 11px;
+  color: #666666;
+  padding: 0 10px;
+  border-right: 1px solid #c0c0c0;
+}
+.nav ul li a:hover {
+  color: #7dbf2d;
+}
+/*logo*/
+.logoList {
+  height: 100px;
+}
+.logoList h1 {
+  width: 190px;
+  height: 43px;
+  margin-top: 30px;
+  margin-left: 140px;
+}
+/*登录*/
+.logins {
+  width: 100%;
+  height: 470px;
+  background: url(../images/login-bg.png) no-repeat center;
+}
+.logins .panel {
+  width: 1000px;
+  height: 470px;
+  margin: 0 auto;
+  background: url(../images/login-login.png) no-repeat center left;
+}
+.logins .panel .form_div{
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    height: 405px;
+    top: 30px;
+    left: 67%;
+}
+.youshang{
+	display: block;
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+	cursor: pointer;
+}
+.youshang i{
+	background-position: 0 -230px;
+	width: 65px;
+	height: 65px;
+	display: block;
+}
+.zhuti{
+	width: 270px;
+	margin-left: 40px;
+}
+.row1{
+	margin: 14px 0 19px;
+	height: 40px;
+	overflow: hidden;
+	line-height: 40px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.row1 span{
+	float: left;
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	padding: 0 18px;
+}
+.row1 a{
+	float: left;
+	display: inline-block;
+	
+	font-size: 16px;
+	line-height: 40px;
+}
+form a{
+	color: antiquewhite;
+}
+.row1 a:hover{
+	color: blue;
+}
+.add{
+	font-weight: bold;
+	color: orangered;
+}
+.row2,.row3{
+	height: 267px;
+	border-bottom: 1px dotted #ccc;
+	overflow: hidden;
+	width: 300px;
+}
+.row3{
+	display: none;
+}
+#wrongu_1,#wrongu_2,#wrongu_3{
+	display: none;
+}
+#wrongu_4,#wrongu_5,#wrongu_6{
+	display: none;
+}
+.row2_row1{
+	width: 270px;
+	height: 42px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 20px;
+}
+.row2_row2{
+	width: 270px;
+	height: 42px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 20px;
+}
+.row2_row3{
+	width: 270px;
+	height: 42px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 20px;
+}
+.row2_login{
+	margin-bottom: 16px;
+}
+form input{
+	float: left;
+	height: 23px;
+	line-height: 30px;
+	color: #999;
+	border: 1px solid #dcdcdc;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.denglu{
+    width: 270px;
+    background-color: #e10303;
+    color: #ccc;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    font-family: "Microsoft Yahei";
+    height: 40px;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+}
+.wrong_user{
+	float: left;
+	width: 65px;
+	height: 27px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #FAFAD2;
+	margin-left: 5px;
+}
+.zhuangtailan{
+	position: absolute;
+	width: 350px;
+	bottom: 0;
+	left: 0;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	color: wheat;
+}
+.zhuangtailan a{
+	font-size: 18px;
+	float: right;
+	right: 22px;
+	color: white;
+	margin-right: 16px;
+	font-weight: bold;
+}
+
+/*尾部*/
+.context > p {
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+.context > p:nth-child(1) {
+  margin-top: 20px;
+}
+.context > p a {
+  color: #666666;
+}
+.context > p a:hover {
+  color: #7dbf2d;
+}
+
+/*# sourceMappingURL=login.css.map */
